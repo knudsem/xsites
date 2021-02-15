@@ -1,0 +1,312 @@
+/*
+Theme Name: xsites
+Theme URI: https://xsites.io
+Author: Mathias Knudsen
+Author URI: https://mathiasknudsen.com
+Description: Mon premier thème !
+Requires at least: WordPress 5.0
+Version: 1.0
+*/
+
+
+.menu {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    background: #191919;
+    height: 75px;
+    z-index: 99;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.menu-item-45 a {
+	border: 1px solid #fff;
+	padding: 5% 10% 5% 10%;
+	border-radius: 8px;
+	text-align: center;
+}
+
+.admin-bar .menu {
+	top: 0px; /* admin bar calcul */
+}
+
+.img-header {
+	width: 100%;
+}
+
+.header{
+	margin-top: 25px;
+	position: relative;
+	overflow: hidden;
+	font-family: 'Montserrat', sans-serif;
+
+}
+
+/*// container class*/
+.custom-menu-class{
+} 
+ 
+/*// container class first unordered list*/
+.custom-menu-class ul {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	list-style-type: none;
+} 
+ 
+/*//unordered list within an unordered list*/
+.custom-menu-class ul ul {} 
+ 
+/* // each navigation item*/
+.custom-menu-class li {}
+ 
+/*// each navigation item anchor*/
+.custom-menu-class li a {
+	text-decoration: none;
+} 
+ 
+/*// unordered list if there is drop down items*/
+.custom-menu-class li ul {} 
+ 
+/*// each drop down navigation item*/
+.custom-menu-class li li {} 
+ 
+/*// each drap down navigation item anchor*/
+.custom-menu-class li li a {} 
+
+
+.homeicon {
+	height: auto;
+	min-height: 65%;
+	color: transparent; 
+	cursor: pointer;
+	background-image: url('../img/powerd.png');
+	background-repeat: no-repeat;
+	background-position: left;
+	padding-left: 5px;
+	min-width: 185px;
+}
+
+div.custom-menu-class a { 
+    color:#FFFFFF;
+}
+.homeicon a {
+	color: transparent!important;
+}
+
+div.custom-menu-class ul {
+    margin:0;
+    list-style-type: none;
+    list-style: none;
+    list-style-image: none;
+    text-align:right;
+}
+div.custom-menu-class li {
+    padding: 0px 20px 0px 0px;
+    display: inline;
+} 
+
+.hero-container {
+	position: absolute;
+    top: calc(42% - 105px);
+    left: calc(50% - 119px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+}
+
+.title-header {
+	font-weight: 700;
+}
+.sub-title-header {
+	font-weight: 400;
+}
+
+.signup, .signnow {
+    font-family: 'Montserrat', sans-serif;
+	background-color: #1abc51;
+    box-shadow: 0 0 8px 0 rgb(0 0 0 / 44%);
+    border: solid 3px #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+    width: 100%;
+    padding: 4% 20% 4% 20%;
+    text-transform: uppercase;
+    font-weight: 600;
+     background-repeat: no-repeat;
+    background-position: -500px -120px, 0 0;
+    /************* Make hover effect on the button *************/
+      background-image: -webkit-linear-gradient(
+        top left,
+        rgba(255, 255, 255, 0.2) 0%,
+        rgba(255, 255, 255, 0.2) 37%,
+        rgba(255, 255, 255, 0.8) 45%,
+        rgba(255, 255, 255, 0.0) 50%
+      );
+      background-image: -moz-linear-gradient(
+        0 0,
+        rgba(255, 255, 255, 0.2) 0%,
+        rgba(255, 255, 255, 0.2) 37%,
+        rgba(255, 255, 255, 0.8) 45%,
+        rgba(255, 255, 255, 0.0) 50%
+      );    
+      background-image: -o-linear-gradient(
+        0 0,
+        rgba(255, 255, 255, 0.2) 0%,
+        rgba(255, 255, 255, 0.2) 37%,
+        rgba(255, 255, 255, 0.8) 45%,
+        rgba(255, 255, 255, 0.0) 50%
+      );
+      background-image: linear-gradient(
+        0 0,
+        rgba(255, 255, 255, 0.2) 0%,
+        rgba(255, 255, 255, 0.2) 37%,
+        rgba(255, 255, 255, 0.8) 45%,
+        rgba(255, 255, 255, 0.0) 50%
+      );
+      -moz-background-size: 250% 250%, 100% 100%;
+      background-size: 250% 250%, 100% 100%;
+      -webkit-transition: background-position 0s ease;
+      -moz-transition: background-position 0s ease;       
+      -o-transition: background-position 0s ease;
+      transition: background-position 0s ease;
+}
+
+.signup:hover, .signnow:hover{
+	background-position: 0 0, 0 0;
+    -webkit-transition-duration: 0.7s;
+    -moz-transition-duration: 0.7s;
+    transition-duration: 0.7s;
+}
+
+.player {
+	display: flex;
+    flex-direction: row-reverse;
+    margin-left: -16%;
+    text-decoration: none;
+    margin-top: 5%;
+}
+
+.player p {
+	color: #fff;
+}
+
+.play {
+	width: 35%;
+}
+
+
+.who-section, .why-section {
+	font-family: 'Montserrat', sans-serif;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.who-section {
+	margin-top: -5px;
+    background-color: #fbf8f3;
+    padding-bottom: 2%;
+}
+
+.who-section p {
+	width: 50%;
+}
+
+.why-section {
+	padding-top: 2%;
+}
+.explanation {
+	width: 80%;
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-left: 8%;
+}
+
+.flex-point {
+	width: 8%;
+}
+.flex-item {
+	width: 70%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	color: #c7a663;
+}
+
+.flex-item h3 {
+	width: 100%;
+}
+.flex-wrapper {
+	display: flex;
+	flex-direction: column;
+    width: 33%;
+}
+
+.flex-wrapper p {
+	width: 80%;
+	font-family: 'Poppins';
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.44;
+	letter-spacing: normal;
+	color: #000000;
+}
+
+.signnow {
+    width: 20%;
+    padding: 1.5% 5% 1.5% 5%;
+    margin-top: 2%;
+    margin-left: -2%;
+    text-transform: uppercase;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    margin-bottom: 10%;
+}
+
+#popup {
+ 	display: none;
+  	position: fixed;
+   	top: 12%;
+    left: 15%; 
+    width: 70%; 
+    height: 70%; 
+    background-color: white;
+    z-index: 10;
+}
+#popup iframe { 
+	width: 100%;
+	height: 100%; 
+	border: 0; 
+}
+#popupdarkbg {
+ 	position: fixed;
+  	z-index: 5;
+   	left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0,0,0,.75);
+    display: none;
+}
+
+.pictures {
+	height: 600px;
+	background-color: #fbf8f3;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: visible;
+}
+
+.triple-pic {
+	width: 50%;
+}
