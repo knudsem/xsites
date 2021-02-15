@@ -96,3 +96,4 @@ if ( ! defined( 'ABSPATH' ) )
 
 /** Réglage des variables de WordPress et de ses fichiers inclus. */
 require_once( ABSPATH . 'wp-settings.php' );
+define(‘WP_ALLOW_REPAIR’, true);
